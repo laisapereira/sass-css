@@ -1,0 +1,111 @@
+@import './global';
+
+@mixin FlexCenter($flex) {
+    
+    display:flex;
+    flex-direction:$flex;
+    gap:2rem;
+    border-radius:0.3rem;
+    color: $corParagrafo;
+    padding:2rem;
+    
+}
+
+
+@mixin Button() {
+    border-radius: 3rem;
+    padding: 0.7rem;
+    width: 7rem;
+    margin-top:3rem;
+}
+
+body {
+    background-color: $corBackground;
+}
+
+Aside {
+   
+    
+    display:flex;
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 10rem;
+   
+
+    h1 {
+        text-transform: uppercase;
+        color: white;
+        font-family: $fontePrimaria;
+    }
+
+
+
+    div {
+        @include FlexCenter(column);
+        
+       
+        margin:0 auto;
+    
+        button {
+            @include Button();
+
+            background-color:$corBackground;;
+            &:hover {
+                cursor:pointer;
+                background-color: white;
+               
+            }
+        }
+    
+        p {
+            font-family: $fonteSecund;
+            font-size:0.85rem;
+            font-weight:400;
+        }
+    
+       
+        img {
+            width:3rem;
+        }
+    
+    
+    }
+}
+
+
+
+#orange-column {
+    background-color: $Bright-orange;
+
+    button {
+        color:$Bright-orange;
+    }
+}
+
+#blue-column {
+    background-color:$Dark-cyan;
+
+    button {
+        color:$Dark-cyan;
+    }
+
+}
+
+#vblue-column {
+    background-color: $Very-dark-cyan;
+    button {
+        color:$Very-dark-cyan;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    Aside {
+        padding-top: 5rem;
+        width: 80vw;
+        flex-direction: column;
+    }
+}
+

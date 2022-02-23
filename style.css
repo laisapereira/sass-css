@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+Aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+Aside h1 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+Aside div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  border-radius: 0.3rem;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+Aside div button {
+  border-radius: 3rem;
+  padding: 0.7rem;
+  width: 7rem;
+  margin-top: 3rem;
+  background-color: #f2f2f2;
+}
+
+Aside div button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+Aside div p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+Aside div img {
+  width: 3rem;
+}
+
+#orange-column {
+  background-color: #e38826;
+}
+
+#orange-column button {
+  color: #e38826;
+}
+
+#blue-column {
+  background-color: #006970;
+}
+
+#blue-column button {
+  color: #006970;
+}
+
+#vblue-column {
+  background-color: #004241;
+}
+
+#vblue-column button {
+  color: #004241;
+}
+
+@media screen and (max-width: 768px) {
+  Aside {
+    padding-top: 5rem;
+    width: 80vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
